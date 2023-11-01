@@ -57,5 +57,101 @@ class TestCom1Fragment : Fragment() {
 
         return binding.root
     }
+//onCreateView
+
+    //setOnClickListener
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setOnClickListener()
+    }
+
+    //상세 페이지 이동
+    private fun setOnClickListener() {
+//        binding.img0.setOnClickListener(this)
+//        binding.img1.setOnClickListener(this)
+//        binding.img2.setOnClickListener(this)
+//        binding.img3.setOnClickListener(this)
+//        binding.img4.setOnClickListener(this)
+//        binding.img5.setOnClickListener(this)
+//        binding.img6.setOnClickListener(this)
+//        binding.img7.setOnClickListener(this)
+//        binding.img8.setOnClickListener(this)
+//    }
+
+//    override fun onClick(v: View) {
+//        when (v.id) {
+//            R.id.img0 -> {
+//                Log.d("test", "test clicked..")
+//                val fish = fishsublist.get(0)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+
+//            R.id.img1 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(1)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img2 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(2)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img3 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(3)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img4 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(4)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img5 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(5)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img6 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(6)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img7 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(7)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//
+//            R.id.img8 -> {
+//                Log.d("test","test clicked..")
+//                val fish = fishsublist.get(8)
+//                val intent = Intent(activity, FishpageActivity::class.java)
+//                intent.putExtra("fish", fish)
+//                startActivity(intent)
+//            }
+//        }
+    }
 
 }

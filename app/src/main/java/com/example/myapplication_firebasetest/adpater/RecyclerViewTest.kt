@@ -1,5 +1,6 @@
 package com.example.myapplication_firebasetest.adpater
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +22,9 @@ class RecyclerViewTest (val datas:MutableList<String>) : RecyclerView.Adapter<Re
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val binding = (holder as MyViewHolderTest).binding
         binding.testText.text = datas[position]
+        binding.itemRoot.setOnClickListener {
+            Log.d("lsy", "item clicked : $position")
+        }
 
     }
 
