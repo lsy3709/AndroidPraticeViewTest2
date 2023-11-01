@@ -23,7 +23,11 @@ class RecyclerViewTest (val datas:MutableList<String>) : RecyclerView.Adapter<Re
         val binding = (holder as MyViewHolderTest).binding
         binding.testText.text = datas[position]
         binding.itemRoot.setOnClickListener {
-            Log.d("lsy", "item clicked : $position")
+            if(position == 0) {
+                Log.d("lsy", "0번 클릭 item clicked : $position")
+            } else {
+                Log.d("lsy", "0번 외 클릭 item clicked : $position")
+            }
         }
 
     }
